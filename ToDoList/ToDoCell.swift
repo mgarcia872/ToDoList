@@ -8,22 +8,22 @@
 
 import UIKit
 
-@objc protocol ToDoCellDelegate: class {
-    func checkmarkTapped(sender: ToDoCell)
-}
+protocol ToDoCellDelegate
+{
+    func checkMarkTapped(_ sender: ToDoCell)
+} // end of protocol
 
 class ToDoCell: UITableViewCell
 {
-    var delegate: ToDoCellDelegate?
     
     @IBOutlet weak var isCompleteButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     
+    var delegate: ToDoCellDelegate?
     
-    @IBAction func completeButtonTapped(_ sender: UIButton)
+    @IBAction func isCompleteButtonTapped(_ sender: UIButton)
     {
-        delegate?.checkmarkTapped(sender: self)
-        
-    }
-    
-} // end of class ToDoCell
+        delegate?.checkMarkTapped(self)
+    } // end of isCompleteButtonTapped
+
+} // end of ToDoCell class
