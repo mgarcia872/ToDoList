@@ -30,9 +30,9 @@ struct ToDo: Codable
     static func loadSampleToDos() -> [ToDo]
     {
         return [
-            ToDo(title: "ToDo One", isComplete: false, dueDate: Date(), notes: "Notes 1"),
-            ToDo(title: "ToDo Two", isComplete: false, dueDate: Date(), notes: "Notes 2"),
-            ToDo(title: "ToDo Three", isComplete: false, dueDate: Date(), notes: "Notes 3")
+            ToDo(title: "To-Do One", isComplete: false, dueDate: Date(), notes: "Notes 1"),
+            ToDo(title: "To-Do Two", isComplete: false, dueDate: Date(), notes: "Notes 2"),
+            ToDo(title: "To-Do Three", isComplete: false, dueDate: Date(), notes: "Notes 3")
         ]
     } // end of loadSampleToDos
     
